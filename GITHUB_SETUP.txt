@@ -1,0 +1,145 @@
+PUTTING SURGIMASTER ON YOUR IPHONE VIA GITHUB
+=============================================
+This is a one-off, about ten minutes. After it, the app sits on your home
+screen with its own icon, opens full screen with no browser bars, and works
+with no signal at all.
+
+You need: a browser (phone or computer, either is fine) and an email address.
+It is free. You are not writing any code — GitHub is only being used as a
+place to put six files.
+
+
+PART 1 — MAKE THE ACCOUNT
+-------------------------
+ 1. Go to github.com and click "Sign up".
+ 2. Enter your email, make a password, pick a username.
+    The username becomes part of your web address, so pick something you do
+    not mind seeing — e.g. "sge-surg" gives sge-surg.github.io later.
+ 3. Verify the email they send you.
+ 4. Choose the FREE plan if it asks. Skip any questionnaire.
+
+
+PART 2 — MAKE THE REPOSITORY
+----------------------------
+A repository ("repo") is just a folder on GitHub.
+
+ 5. Once signed in, click the "+" at the TOP RIGHT of the page, then
+    "New repository".
+ 6. Repository name:  surgimaster
+    (lower case, no spaces — this also becomes part of the address)
+ 7. Set it to PUBLIC.
+    This matters: free GitHub Pages hosting only works on public repos. It
+    means anyone with the exact link can view the app. That is fine — the app
+    contains no personal data. Everything you log stays on your phone and is
+    never uploaded.
+ 8. Tick "Add a README file".
+ 9. Click "Create repository".
+
+
+PART 3 — UPLOAD THE FILES
+-------------------------
+10. On your new repo page, click "Add file" (a button near the top right of
+    the file list), then "Upload files".
+11. Drag in ALL SIX files from this folder:
+        index.html
+        SurgiMaster.html
+        manifest.webmanifest
+        sw.js
+        icon.png
+        icon-512.png
+    On a phone: tap "choose your files" and select them from Files.
+    Upload all six together. Do not put them inside a subfolder — they must
+    sit at the top level of the repo.
+12. Scroll down and click "Commit changes".
+13. You should now see all six files listed on the repo page. If any is
+    missing, repeat step 10 for that file.
+
+
+PART 4 — TURN ON HOSTING
+------------------------
+14. Click "Settings" (top bar of the repo, on the right, with a gear icon).
+15. In the LEFT sidebar, scroll down and click "Pages".
+16. Under "Build and deployment" > "Source", leave it as
+    "Deploy from a branch".
+17. Under "Branch", the dropdown probably says "None". Change it to "main".
+    Leave the folder dropdown as "/ (root)".
+18. Click "Save".
+19. Wait about one to two minutes, then reload the Settings > Pages page.
+    A green box appears with your address:
+
+        https://YOURNAME.github.io/surgimaster/
+
+    (with your username in place of YOURNAME)
+
+    If it still says "Your site is being built", wait another minute and
+    reload. First deploy is the slow one.
+
+
+PART 5 — INSTALL IT ON THE PHONE
+--------------------------------
+20. Open that address in SAFARI on the iPhone or iPad.
+    It MUST be Safari. Chrome on iOS cannot add apps to the home screen.
+21. Check the app loads and you can see the schedule.
+22. Tap the SHARE button — the square with an arrow pointing up, in the
+    bottom bar (or top right on iPad).
+23. Scroll down the share sheet and tap "Add to Home Screen".
+24. The name will already say SurgiMaster. Tap "Add" (top right).
+25. Close Safari. Open SurgiMaster from your home screen.
+
+It should now open full screen with no address bar. Put it in flight mode and
+open it again to confirm it works offline — it will.
+
+
+PART 6 — THE CALENDAR
+---------------------
+Do this once, BEFORE importing anything:
+    Calendar app > Calendars > Add Calendar > name it "SurgiMaster".
+
+Everything then lands in that one calendar, so you can hide the entire
+schedule with one tap, or delete the calendar to remove all 1,893 entries at
+once. Import into your default calendar and you will be deleting events one
+at a time.
+
+Then either open the .ics file from the Files app, or — better — open the app,
+go to Plan > "Add to your calendar", choose your options and tap "Open in
+Calendar". Exporting from the app means the calendar always matches the
+schedule on screen, including any pacing changes you have made since.
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+"404 — There isn't a GitHub Pages site here"
+    Either Pages is not switched on (redo Part 4), or the files went into a
+    subfolder instead of the top level. Open the repo: you should see
+    index.html listed directly, not inside another folder.
+
+The address works but the page is blank
+    The upload missed index.html. Repeat Part 3 for that file.
+
+"Add to Home Screen" is not in the share sheet
+    You are not in Safari. Copy the address and open it in Safari.
+
+The icon is a grey page instead of the SurgiMaster icon
+    icon.png did not upload. Add it, then remove the home-screen shortcut and
+    add it again.
+
+I changed something and the app still looks old
+    Installed apps cache aggressively. Delete the home-screen icon, open the
+    address in Safari again, then re-add it.
+
+
+UPDATING LATER
+--------------
+If I send you a new version, open the repo, click the old file, click the
+pencil or the "..." > "Upload files", replace it, and commit. The live site
+updates within a minute. Your logged data is untouched by this — it lives on
+the phone, not in the repo. Back it up anyway from Diary > Backup first.
+
+
+A NOTE ON PRIVACY
+-----------------
+The repo is public, so the app code is visible to anyone with the link. The
+code contains your curriculum structure (topic names, lecture counts, question
+counts) and nothing else. No misses, no scores, no calibration data, no name.
+All of that is stored only in your phone browser and is never sent anywhere —
+the app makes no network requests of any kind.
